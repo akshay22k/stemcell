@@ -1,13 +1,19 @@
+import java.util.ArrayList;
+
 public class Cell {
     public int strength, x, y, id; //get and set
 
     public Cell(int strength, int x, int y, int id){
-        this.strength = 0;
-        this.x = 0;
-        this.y = 0;
-        this.id = 0;
+        this.strength = strength;
+        this.x = x;
+        this.y = y;
+        this.id = id;
     }
     public Cell(){
-        this(0,0,3,1);
+        this(0,0,0,0);
+    }
+
+    public void interactNeighbours(ArrayList<Cell> neighbours){
+
     }
 }
